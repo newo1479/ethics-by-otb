@@ -49,9 +49,9 @@ $_SESSION["E2S3"]=$_POST["E2S3"];//E2S3 Variable
          <!--example 3-->
          <div id="example7">
            <P class="survey-paragraph">A self-driving car full of 5 passengers is approaching a corner when some people start to cross the road and the brakes of the vehicle fail, knowing that it will not be able to stop or slow down before the crossing people the alternative for the car is to swerve around the 3 pedestrians but into a large, parked cement mixer resulting in the fatalities of those in the car. Should the car? </P>
-           <input type="radio" id="example3-stage2-utilitarian-ni" name="E3S1" value="E3S1-UTILITARIAN-ni"required></input>
+           <input type="radio" id="example3-stage1-utilitarian-ni" name="E3S1" value="E3S1-UTILITARIAN-ni"required></input>
              <label class="example-option" for="example3-stage2-utilitarian-ni">Continue present course (saves 5 in car, kill 3 pedestrians)</label><br>
-           <input type="radio" id="example3-stage2-deontology-i" name="E3S1" value="E3S1-DEONTOLOGY-i">
+           <input type="radio" id="example3-stage1-deontology-i" name="E3S1" value="E3S1-DEONTOLOGY-i">
              <label class="example-option" for="example3-stage2-deontology-i">Make the intervention and hit the cement mixer (saves 5 in car, kill 3 pedestrians)</label><br>
          </div>
         <div>
