@@ -1,8 +1,7 @@
 <?php session_start(); ?>
 <?php 
 $_SESSION["E5S1"]=$_POST["E5S1"];//E5S1 Variable
-$_SESSION["E5S2"]=$_POST["E5S2"];//E5S2 Variable
-$_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
+$_SESSION["E5S2"]=$_POST["E5S2"];//E5S2 Variable  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +63,7 @@ $_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
                   </div>
                 </div>
         <!--likert 2-->
-              <div id="likert2" style="display: none;">
+              <div id="likert2" >
                 <p class="survey-paragraph"> Manufacturers should have different ethical programming for different parts of the world </p>
                 <div>
                  <input type="radio" id="likert2-1" name="L2" value="L2-1">
@@ -80,7 +79,7 @@ $_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
                 </div>
                </div>
         <!--likert 3-->
-              <div id="likert3" style="display: none;">
+              <div id="likert3" >
                 <p class="survey-paragraph">Pedestrians’ lives should be preserved over those in the vehicle</p>
                 <div>
                  <input type="radio" id="likert3-1" name="L3" value="L3-1">
@@ -96,7 +95,7 @@ $_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
                 </div>
                </div>
         <!--likert 4-->
-              <div id="likert4" style="display: none;">
+              <div id="likert4" >
                 <p class="survey-paragraph"> The most ethical option is to not let the car intervene</p>
                 <div>
                  <input type="radio" id="likert4-1" name="L4" value="L4-1">
@@ -112,7 +111,7 @@ $_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
                 </div>
                </div>
         <!--likert 5-->
-              <div id="likert5" style="display: none;">
+              <div id="likert5" >
                 <p class="survey-paragraph">Those who are abiding by the law should have their lives preserved even if more casualties will result. </p>
                 <div>
                  <input type="radio" id="likert5-1" name="L5" value="L5-1">
@@ -128,50 +127,50 @@ $_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
                 </div>
                </div>
         <!--Likert 6-->
-               <div id="likert6" style="display: none;">
+               <div id="likert6" >
                 <p class="survey-paragraph">Humans should presereve strict control over self-thinking machines </p>
                 <div>
-                 <input type="radio" id="likert6-1" name="L5" value="L5-1">
+                 <input type="radio" id="likert6-1" name="L6" value="L6-1">
                    <label class="example-option" for="likert6-1">STRONGLY AGREE</label>
-                 <input type="radio" id="likert6-2" name="L5" value="L5-2">
+                 <input type="radio" id="likert6-2" name="L6" value="L6-2">
                    <label class="example-option" for="likert6-2">AGREE</label>
-                 <input type="radio" id="likert6-3" name="L5" value="L5-3">
+                 <input type="radio" id="likert6-3" name="L6" value="L6-3">
                    <label class="example-option" for="likert6-3">NEUTRAL</label>
-                 <input type="radio" id="likert6-4" name="L5" value="L5-4">
+                 <input type="radio" id="likert6-4" name="L6" value="L6-4">
                    <label class="example-option" for="likert6-4">DISAGREE</label>
-                 <input type="radio" id="likert6-5" name="L5" value="L5-5">
+                 <input type="radio" id="likert6-5" name="L6" value="L6-5">
                  <label class="example-option" for="likert6-5">STRONGLY DISAGREE</label><br>
                 </div>
                </div>
         <!--Likert 7-->
-                <div id="likert7" style="display: none;">
+                <div id="likert7" >
                   <p class="survey-paragraph">Algorithms should reflect existing bias in society</p>
                   <div>
-                   <input type="radio" id="likert7-1" name="L5" value="L5-1">
+                   <input type="radio" id="likert7-1" name="L7" value="L7-1">
                      <label class="example-option" for="likert7-1">STRONGLY AGREE</label>
-                   <input type="radio" id="likert7-2" name="L5" value="L5-2">
+                   <input type="radio" id="likert7-2" name="L7" value="L7-2">
                      <label class="example-option" for="likert7-2">AGREE</label>
-                   <input type="radio" id="likert7-3" name="L5" value="L5-3">
+                   <input type="radio" id="likert7-3" name="L7" value="L7-3">
                      <label class="example-option" for="likert7-3">NEUTRAL</label>
-                   <input type="radio" id="likert7-4" name="L5" value="L5-4">
+                   <input type="radio" id="likert7-4" name="L7" value="L7-4">
                      <label class="example-option" for="likert7-4">DISAGREE</label>
-                   <input type="radio" id="likert7-5" name="L5" value="L5-5">
+                   <input type="radio" id="likert7-5" name="L7" value="L7-5">
                    <label class="example-option" for="likert7-5">STRONGLY DISAGREE</label><br>
                   </div>
                  </div>
          <!--Likert 8-->
-               <div id="likert8" style="display: none;">
+               <div id="likert8" >
                 <p class="survey-paragraph">Those who are abiding by the law should have their lives preserved even if more casualties will result. </p>
                 <div>
-                 <input type="radio" id="likert8-1" name="L6" value="L6-1" >
+                 <input type="radio" id="likert8-1" name="L8" value="L8-1" >
                    <label class="example-option" for="likert8-1" >STRONGLY AGREE</label>
-                 <input type="radio" id="likert8-2" name="L5" value="L6-2" >
+                 <input type="radio" id="likert8-2" name="L8" value="L8-2" >
                    <label class="example-option" for="likert8-2" >AGREE</label>
-                 <input type="radio" id="likert8-3" name="L5" value="L6-3" >
+                 <input type="radio" id="likert8-3" name="L8" value="L8-3" >
                    <label class="example-option" for="likert8-3" >NEUTRAL</label>
-                 <input type="radio" id="likert8-4" name="L5" value="L6-4" >
+                 <input type="radio" id="likert8-4" name="L8" value="L8-4" >
                    <label class="example-option" for="likert8-4" >DISAGREE</label>
-                 <input type="radio" id="likert8-5" name="L5" value="L6-5" >
+                 <input type="radio" id="likert8-5" name="L8" value="L8-5" >
                  <label class="example-option" for="likert8-5" >STRONGLY DISAGREE</label><br>
                 </div>
                </div><div>

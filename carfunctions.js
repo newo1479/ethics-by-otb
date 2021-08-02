@@ -125,3 +125,10 @@ function e2s1Lock() {
       m.style.display = "block";
     }
   }
+  //Display S4 Submit Button
+  function submitExamples4() {
+    var x = document.getElementById("e4-submit");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    }
+  }

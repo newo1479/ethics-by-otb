@@ -1,10 +1,10 @@
 <?php
 
 		function connect() {
-        $host = 'domain';
-		$dbname = 'username';
-		$user = 'username';
-		$pwd = 'password';
+        $host = 'dragon.ukc.ac.uk';
+		$dbname = 'otb3';
+		$user = 'otb3';
+		$pwd = 'rerom6o';
 		
 		try {
 		

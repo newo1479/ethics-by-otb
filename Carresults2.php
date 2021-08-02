@@ -13,15 +13,19 @@
   $E3S1=$_SESSION["E3S1"];//E3S1 Variable
   $E3S2=$_SESSION["E3S2"];//E3S2 Variable
   $E3S3=$_SESSION["E3S3"];//E3S3 Variable
+  //SCENARIO 5 VARIABLES
+  $E5S1=$_SESSION["E5S1"];//E3S1 Variable
+  $E5S2=$_SESSION["E5S2"];//E3S2 Variable
+ 
   //LIKERT VARIABLES
   $L1=$_SESSION["L1"];//L1 Variable
   $L2=$_SESSION["L2"];//L2 Variable
   $L3=$_SESSION["L3"];//L3 Variable
   $L4=$_SESSION["L4"];//L4 Variable
   $L5=$_SESSION["L5"];//L5 Variable
-  $L5=$_SESSION["L6"];//L6 Variable
-  $L5=$_SESSION["L7"];//L7 Variable
-  $L5=$_SESSION["L8"];//L8 Variable
+  $L6=$_SESSION["L6"];//L6 Variable
+  $L7=$_SESSION["L7"];//L7 Variable
+  $L8=$_SESSION["L8"];//L8 Variable
   ?>
 </div>
 <!DOCTYPE html>
@@ -74,7 +78,7 @@
   try{
     //SQL Insert Results
     $sql = "INSERT INTO Carresults (
-      e1s1, e1s2, e1s3, e2s1, e2s2, e2s3, e3s1, e3s2, e3s3, s4p1, s4p2, s4p3, s5p1, s5p2, s5p3, l1, l2, l3, l4, l5, l6, l7, l8, age, gender, education) 
+      e1s1, e1s2, e1s3, e2s1, e2s2, e2s3, e3s1, e3s2, e3s3, e5s1, e5s2, l1, l2, l3, l4, l5, l6, l7, l8, age, gender, education) 
       VALUES (
         '$E1S1',
         '$E1S2',
@@ -85,12 +89,8 @@
         '$E3S1',
         '$E3S2',
         '$E3S3',
-        '$S4P1',
-        '$S4P2',
-        '$S4P3',
-        '$S5P1',
-        '$S5P2',
-        '$S5P3',
+        '$E5S1',
+        '$E5S2',
         '$L1',
         '$L2',
         '$L3',
