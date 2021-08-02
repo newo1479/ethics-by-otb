@@ -47,7 +47,7 @@ $_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable
 <div id="cdss-container">
     <form method="POST" action="cardemographics.php">
         <!--likert 1-->
-<div id="likert1" style="display: none;">
+<div id="likert1">
             <div id="line">
                   <p class="survey-paragraph"> It is important for the application of ethical theory to self-driving cars</p>
                   <div>

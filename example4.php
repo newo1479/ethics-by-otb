@@ -47,7 +47,7 @@ $_SESSION["E3S3"]=$_POST["E3S3"];//E3S3 Variable
 <div id="cdss-container">
     <form method="POST" action="exlikert.php">
           <!--Single Stage-->
-          <div id="example13" style="display: none;">
+          <div id="example13">
                 <P class="survey-paragraph">A jack-knifed truck—should it hit the truck and kill its own driver, or should it swerve onto a crowded pavement and kill 3 pedestrians? A human driver might react randomly (if she has time to react at all), but the response of an autonomous vehicle would have to be programmed ahead of time. What should we tell the car to do?</p>
                 <input type="radio" id="example5-stage3-utilitarian-ni" name="E5S1" value="E5S1-UTILITARIAN-ni" onclick="example14()"></input>
                   <label class="example-option" for="example5-stage3-utilitarian-ni" onclick="example14()"> Continue present course crashing itself and killing the driver</label><br>

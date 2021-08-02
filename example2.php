@@ -74,7 +74,7 @@ $_SESSION["E1S3"]=$_POST["E1S3"];//E1S3 Variable
                 <input type="radio" id="example2-stage3-UTILITARIAN-ni" name="E2S3" value="E2S3-UTILITARIAN-ni" onclick="submitExamples2()"required></input>
                   <label class="example-option" for="example2-stage3-utilitarian-ni" onclick="submitExamples2()"> Continue on Present course (saving 20 on prison bus, killing the 8 on party bus)</label><br>
                 <input type="radio" id="example2-stage3-DEONTOLOGY-i" name="E2S3" value="E2S3-DEONTOLOGY-i" onclick="submitExamples2()">
-                  <label class="example-option" for="example2-stage3-deontology-i" onclick="submitExamples2()"> Swerve off the road to save the life of those on the party bus (20 on prison bus killed, 8 on party bus saved) (</label><br>
+                  <label class="example-option" for="example2-stage3-deontology-i" onclick="submitExamples2()"> Swerve off the road to save the life of those on the party bus (20 on prison bus killed, 8 on party bus saved)</label><br>
               </div>
               <div>
                 <button class="start-button" id="e2-submit" style="display: none;">Next Page</button>
