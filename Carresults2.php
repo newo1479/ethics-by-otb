@@ -77,7 +77,7 @@
   $conn = connect();
   try{
     //SQL Insert Results
-    $sql = "INSERT INTO Carresults (
+    $sql = "INSERT INTO Carresults2 (
       e1s1, e1s2, e1s3, e2s1, e2s2, e2s3, e3s1, e3s2, e3s3, e5s1, e5s2, l1, l2, l3, l4, l5, l6, l7, l8, age, gender, education) 
       VALUES (
         '$E1S1',
