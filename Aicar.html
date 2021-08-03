@@ -14,7 +14,7 @@
 
         <header>
             <nav class="navigation-index">
-               <a href="index.html"><h1 id="title">ƎE Ethics Explored</h1></a>
+               <a href="index.html"><h1 id="title">Ethics Explored</h1></a>
               <!--<img src="Logo1.png" height="50" width="">-->
                <ul>
                 <li><a href="index.html">Home</a></li>
@@ -33,7 +33,7 @@
         
             <div>
               <p id="description">Here you will be presented with a series of examples about the use of autonomous vehicles. Each question will include a written description of a example, you will be asked what you feel is the right thing to do but also stress to consider what you would do if you were driving instead of the AI. Finally you will be asked a series of statements where you are invited to ask how far you agree with the statements.</p>
-              <p id="description">There is an example example below, please press <b>Start Judging</b> when you are ready to begin. No knowledge of the topic is required to answer the questions.</p> 
+              <p id="description">There is an example below, once you confirm your choice more will be revealed about the scenario. For the first three scenarios there are three stages, followed by two single stage scenarios. Thank you for your support!</p> 
             </div>
             
             <div id="line">
@@ -43,34 +43,34 @@
             <div id="cdss-container">
               <form method="POST" action="example2.php">
                 <!--example 1 stage 1-->
-                <p class="survey-paragraph">A full coach of 40 passengers is driving down a quiet road when an unidentified van of 3 people comes quickly around the corner. The coach driver is then presented with two options. The first option is continuing the present course into the van which would be the best option at preserving all life on the coach but would kill all on board the van. The second option is swerve suddenly off the road into the verge which would threaten the life of everyone on board the coach but save those which are in the van. Should the coach driver?</p>
+                <p class="survey-paragraph">1.1) A full coach of 40 passengers is driving down a quiet road when an unidentified van with three passengers comes quickly around the corner. The coach driver is then presented with two options. The first option is continuing the present course into the van which would be the best option at preserving all life on the coach but would kill all on board the van. The second option is swerve suddenly off the road into the verge which would threaten the life of everyone on board the coach but save those which are in the van. Should the coach driver?</p>
                 <div>
                   <input type="radio" id="example1-stage1-utilitarian-ni" name="E1S1" value="E1S1-UTILITARIAN-ni"required>
-                  <label class="example-option" for="example1-stage1-utilitarian-ni">Continue the present course (and kill all in van)  </label><br>
+                  <label class="example-option" for="example1-stage1-utilitarian-ni">Continue the present course (saving 40 in coach, killing 3 in van)  </label><br>
                   <input type="radio" id="example1-stage1-deontology-i" name="E1S1" value="E1S1-DEONTOLOGY-i">
-                  <label class="example-option" for="example1-stage1-deontology-i">Make the intervention and avoid the crash (threaten life of all in coach) </label><br>
+                  <label class="example-option" for="example1-stage1-deontology-i">Make the intervention and avoid the crash (threaten life of all 40 in coach, saving 3 in van) </label><br>
                 </div>
                   <div>
                     <button id="e1s1-button" class="confirm-button" onclick="e1s1Lock()">Confirm Choice</button>
                   </div>
                 <!--example 1 stage 2-->
                 <div id="example2" style="display: none;">
-                  <p class="survey-paragraph">More is revealed about the coach incident. The coach is controlled by an AI driver and the van driving quickly is an ambulance responding to an emergency the two responses of the driver are the same. Should the coach? </p>
+                  <p class="survey-paragraph">1.2) More is revealed about the coach incident. The coach is controlled by an AI driver and the van driving quickly is an ambulance responding to an emergency the two responses of the driver are the same. Should the coach? </p>
                   <input type="radio" id="example1-stage2-utilitarian-ni" name="E1S2" value="E1S2-UTILITARIAN-ni"required>
-                  <label class="example-option" for="example1-stage2-utilitarian-ni"> Continue the present course (killing those in the ambulance) (</label><br>
+                  <label class="example-option" for="example1-stage2-utilitarian-ni"> Continue the present course (saving 40 in coach, killing 3 in ambulance) </label><br>
                   <input type="radio" id="example1-stage2-deontology-i" name="E1S2" value="E1S2-DEONTOLOGY-i">
-                  <label class="example-option" for="example1-stage2-deontology-i"> Make the intervention to avoid the ambulance (threaten life of all in the coach)  </label><br>
+                  <label class="example-option" for="example1-stage2-deontology-i"> Make the intervention to avoid the ambulance (threaten life of all 40 in coach, saving 3 in van)  </label><br>
                 </div>
                 <div>
                   <button id="e1s2-button" class="confirm-button" style="display: none;" onclick="e1s2Lock()">Confirm Choice</button>
                 </div>-
                <!--example 1 stage 3-->
               <div id="example3" style="display: none;">
-                <p class="survey-paragraph">The final piece of information is revealed the emergency the ambulance is responding to is one which is involving your family member if the ambulance does not get there they will die. If in the last step you chose to preserve the live of all in the coach, do you change your mind because of this information </p>
+                <p class="survey-paragraph">1.3) The final piece of information is revealed the emergency the ambulance is responding to is one which is involving your family member if the ambulance does not get there they will die. If in the last step you chose to preserve the live of all in the coach, do you change your mind because of this information </p>
                 <input type="radio" id="example1-stage3-UTILITARIAN-ni" name="E1S3" value="E1S3-UTILITARIAN-ni" onclick="submitExamples1()"required>
-                  <label class="example-option" for="example1-stage3-UTILITARIAN-ni" onclick="submitExamples1()">Continue present course (killing those in ambulance) </label><br>
+                  <label class="example-option" for="example1-stage3-UTILITARIAN-ni" onclick="submitExamples1()">Continue present course (saving 40 in coach, killing 3 in van) </label><br>
                 <input type="radio" id="example1-stage3-DEONTOLOGY-i" name="E1S3" value="E1S3-DEONTOLOGY-i" onclick="submitExamples1()">
-                  <label class="example-option" for="example1-stage3-DEONTOLOGY-i" onclick="submitExamples1()">Make the intervention to avoid the ambulance killing those in the bus but saving your family </label><br>
+                  <label class="example-option" for="example1-stage3-DEONTOLOGY-i" onclick="submitExamples1()">Make the intervention to avoid the ambulance (saving those in ambulance and thus your family, killing 30/40 on the bus)</label><br>
               </div>
               <div>
                 <button class="start-button" id="e1-submit" style="display: none;">Next Page</button>

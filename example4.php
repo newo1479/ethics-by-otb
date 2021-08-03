@@ -48,14 +48,14 @@ $_SESSION["E3S3"]=$_POST["E3S3"];//E3S3 Variable
     <form method="POST" action="exlikert.php">
           <!--Single Stage-->
           <div id="example13">
-                <P class="survey-paragraph">A jack-knifed truck—should it hit the truck and kill its own driver, or should it swerve onto a crowded pavement and kill 3 pedestrians? A human driver might react randomly (if she has time to react at all), but the response of an autonomous vehicle would have to be programmed ahead of time. What should we tell the car to do?</p>
+                <P class="survey-paragraph">4. A jack-knifed truck—should it hit the truck and kill its own driver, or should it swerve onto a crowded pavement and kill 3 pedestrians? A human driver might react randomly (if she has time to react at all), but the response of an autonomous vehicle would have to be programmed ahead of time. What should we tell the car to do?</p>
                 <input type="radio" id="example5-stage1-utilitarian-ni" name="E5S1" value="E5S1-UTILITARIAN-ni" onclick="submitExamples4()" required></input>
                   <label class="example-option" for="example5-stage3-utilitarian-ni" onclick="submitExamples4()" > Continue present course crashing itself and killing the driver</label><br>
                 <input type="radio" id="example5-stage1-deontology-i" name="E5S1" value="E5S1-DEONTOLOGY-i" onclick="submitExamples4()">
                   <label class="example-option" for="example5-stage3-deontology-i" onclick="submitExamples4()"> Swerving off the road and kill the pedestrians on the pavement </label><br>
               </div>
               <div id="example14"> 
-                <P class="survey-paragraph">You are in a self-driving car with two passengers that is driving down a narrow country road when it comes around a corner there are a family of 4 people in on a walk with their dog in the road. What should we tell the car to do?</p>
+                <P class="survey-paragraph">5. You are in a self-driving car with two passengers that is driving down a narrow country road when it comes around a corner there are a family of 4 people in on a walk with their dog in the road. What should we tell the car to do?</p>
                 <input type="radio" id="example5-stage2-utilitarian-ni" name="E5S2" value="E5S2-UTILITARIAN-ni" onclick="submitExamples4()" required></input>
                   <label class="example-option" for="example6-stage3-utilitarian-ni" onclick="submitExamples4()"> Swerve off the road avoiding the pedestrians but kill all those in the car including yourself </label><br>
                 <input type="radio" id="example5-stage2-deontology-i" name="E5S2" value="E5S2-DEONTOLOGY-i" onclick="submitExamples4()">
