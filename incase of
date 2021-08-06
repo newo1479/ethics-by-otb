@@ -1,0 +1,91 @@
+ /*    //SQL Create Tables
+    $sql = "CREATE TABLE IF NOT EXISTS StageOneUtilitarian (
+        Value varchar(600),
+        ScenarioNumber int,
+        Name varchar(600),
+        Content varchar(600),
+        Result varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql);
+    $sql1 = "CREATE TABLE IF NOT EXISTS  StageTwoUtilitarian (
+        Value varchar(600),
+        ScenarioNumber int,
+        Name varchar(600),
+        Content varchar(600),
+        Result varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql1);
+    $sql2 = "CREATE TABLE IF NOT EXISTS StageThreeUtilitarian (
+        Value varchar(600),
+        ScenarioNumber int,
+        Name varchar(600),
+        Content varchar(600),
+        Result varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql2);
+    $sql3 = "CREATE TABLE IF NOT EXISTS StageOneDeontology (
+        Value varchar(600),
+        ScenarioNumber int,
+        Name varchar(600),
+        Content varchar(600),
+        Result varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql3);
+    $sql4 = "CREATE TABLE IF NOT EXISTS StageTwoDeontolgy (
+        Value varchar(600),
+        ScenarioNumber int,
+        Name varchar(600),
+        Content varchar(600),
+        Result varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql4);
+    $sql5 = "CREATE TABLE IF NOT EXISTS StageThreeDeontolgy (
+        Value varchar(600),
+        ScenarioNumber int,
+        Name varchar(600),
+        Content varchar(600),
+        Result varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql5);
+    $sql6 = "CREATE TABLE IF NOT EXISTS LikertStronglyAgree (
+        Name varchar(600),
+        ScenarioNumber int,
+        Value varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql6);
+    $sql7 = "CREATE TABLE IF NOT EXISTS LikertAgree (
+        Name varchar(600),
+        ScenarioNumber int,
+        Value varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql7);
+    $sql8 = "CREATE TABLE IF NOT EXISTS LikertNAnorD (
+        Name varchar(600),
+        ScenarioNumber int,
+        Value varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql8);
+    $sql9 = "CREATE TABLE IF NOT EXISTS LikertDisagree (
+        Name varchar(600),
+        ScenarioNumber int,
+        Value varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql9);
+    $sql10 = "CREATE TABLE IF NOT EXISTS LikertStronglyDisagree (
+        Name varchar(600),
+        ScenarioNumber int,
+        Value varchar(600),
+        PRIMARY KEY (Name)
+        )";
+        $conn->exec($sql10);
+    }*/
