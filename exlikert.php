@@ -2,6 +2,10 @@
 <?php 
 $_SESSION["E5S1"]=$_POST["E5S1"];//E5S1 Variable
 $_SESSION["E5S2"]=$_POST["E5S2"];//E5S2 Variable  
+$_SESSION["E5S3"]=$_POST["E5S3"];//E5S3 Variable  
+$_SESSION["variable10"]=$_POST["variable10"];//E2S3 Variable
+$_SESSION["variable11"]=$_POST["variable11"];//E2S3 Variable
+$_SESSION["variable12"]=$_POST["variable12"];//E2S3 Variable
 ?>
 <!DOCTYPE html>
 <html lang="en">

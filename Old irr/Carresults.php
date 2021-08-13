@@ -75,6 +75,9 @@ try {
     E3S1 VARCHAR(255) NOT NULL,
     E3S2 VARCHAR(255) NOT NULL,
     E3S3 VARCHAR(255) NOT NULL,
+    E4S1 VARCHAr(255) NOT NULL,
+    E4S2 VARCHAr(255) NOT NULL,
+    E4S3 VARCHAr(255) NOT NULL,
     E5S1 VARCHAR(255) NOT NULL,
     E5S2 VARCHAR(255) NOT NULL,
     l1 VARCHAR(255) NOT NULL,
@@ -93,7 +96,7 @@ try {
 
 
   //sql to insert data table
-  $sql = "INSERT INTO Carresults (
+ $sql = "INSERT INTO Carresults2 (
     E1S1, 
     E1S2, 
     E1S3, 
