@@ -1,22 +1,36 @@
 <?php session_start(); ?>
 <div> <!--Session Variables-->
   <?php 
-  //SCENARIO 1 VARIABLES
+//DEONTOLOGY VARIABLES
+  //D SCENARIO 1 VARIABLES
   $E1S1=$_SESSION["E1S1"];//E1S1 Variable
   $E1S2=$_SESSION["E1S2"];//E1S2 Variable
   $E1S3=$_SESSION["E1S3"];//E1S3 Variable
-  //SCENARIO 2 VARIABLES
+  //D SCENARIO 2 VARIABLES
   $E2S1=$_SESSION["E2S1"];//E2S1 Variable
   $E2S2=$_SESSION["E2S2"];//E2S2 Variable
   $E2S3=$_SESSION["E2S3"];//E2S3 Variable
-  //SCENARIO 3 VARIABLES
+  //D SCENARIO 3 VARIABLE
   $E3S1=$_SESSION["E3S1"];//E3S1 Variable
-  $E3S2=$_SESSION["E3S2"];//E3S2 Variable
-  $E3S3=$_SESSION["E3S3"];//E3S3 Variable
-  //SCENARIO 5 VARIABLES
-  $E5S1=$_SESSION["E5S1"];//E3S1 Variable
-  $E5S2=$_SESSION["E5S2"];//E3S2 Variable
- 
+  //D SCENARIO 4 VARIABLE
+  $E4S1=$_SESSION["E4S1"];//E4S1 Variable
+
+
+
+//UTILITARIAN VARIABLES
+  //U SCENARIO 1 VARIABLES
+  $E1S1=$_SESSION["E1S1"];//E1S1 Variable
+  $E1S2=$_SESSION["E1S2"];//E1S2 Variable
+  $E1S3=$_SESSION["E1S3"];//E1S2 Variable
+  //U SCENARIO 2 Variables 
+  $E2S1=$_SESSION["E2S1"];//E2S1 Variable
+  $E2S2=$_SESSION["E2S2"];//E2S2 Variable
+  $E2S3=$_SESSION["E2S3"];//E2S2 Variable
+  //U SCENARIO 3 Variables 
+  $E3S1=$_SESSION["E3S1"];//E3S1 Variable
+  //U SCENARIO 4 Variable
+  $E4S1=$_SESSION["E4S1"];//E4S1 Variable
+
   //LIKERT VARIABLES
   $L1=$_SESSION["L1"];//L1 Variable
   $L2=$_SESSION["L2"];//L2 Variable
@@ -24,8 +38,7 @@
   $L4=$_SESSION["L4"];//L4 Variable
   $L5=$_SESSION["L5"];//L5 Variable
   $L6=$_SESSION["L6"];//L6 Variable
-  $L7=$_SESSION["L7"];//L7 Variable
-  $L8=$_SESSION["L8"];//L8 Variable
+  
   ?>
 </div>
 <!DOCTYPE html>
@@ -78,7 +91,7 @@
   try{
     //SQL Insert Results
     $sql = "INSERT INTO Carresults2 (
-      e1s1, e1s2, e1s3, e2s1, e2s2, e2s3, e3s1, e3s2, e3s3, e5s1, e5s2, l1, l2, l3, l4, l5, l6, l7, l8, age, gender, education) 
+      e1s1, e1s2, e1s3, e2s1, e2s2, e2s3, e3s1, e4s1,e1s1, e1s2, e1s3, e2s1, e2s2, e2s3, e3s1, e4s1, l1, l2, l3, l4, l5, l6, age, gender, education) 
       VALUES (
         '$E1S1',
         '$E1S2',
@@ -87,18 +100,21 @@
         '$E2S2',
         '$E2S3',
         '$E3S1',
-        '$E3S2',
-        '$E3S3',
-        '$E5S1',
-        '$E5S2',
+        '$E4S1',
+        '$E1S1',
+        '$E1S2',
+        '$E1S3',
+        '$E2S1',
+        '$E2S2',
+        '$E2S3',
+        '$E3S1',
+        '$E4S1',
         '$L1',
         '$L2',
         '$L3',
         '$L4',
         '$L5',
         '$L6',
-        '$L7',
-        '$L8',
         '".$_POST["AGE"]."',
         '".$_POST["gender"]."',
         '".$_POST["education"]."')";
