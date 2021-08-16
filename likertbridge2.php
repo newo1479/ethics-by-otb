@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php 
-$_SESSION["E1S1"]=$_POST["E1S1"];//E1S1 Variable
-$_SESSION["E1S2"]=$_POST["E1S2"];//E1S2 Variable
-$_SESSION["E1S3"]=$_POST["E1S3"];//E1S3 Variable
+$_SESSION["E2S1"]=$_POST["E2S1"];//E1S1 Variable
+$_SESSION["E2S2"]=$_POST["E2S2"];//E1S2 Variable
+$_SESSION["E2S3"]=$_POST["E2S3"];//E1S3 Variable
 $_SESSION["variable4"]=$_POST["variable4"];//E2S3 Variable
 $_SESSION["variable5"]=$_POST["variable5"];//E2S3 Variable
 $_SESSION["variable6"]=$_POST["variable6"];//E2S3 Variable
@@ -49,31 +49,31 @@ $_SESSION["variable6"]=$_POST["variable6"];//E2S3 Variable
 <div id="cdss-container">
 <form method="POST" action="#">
         <div id="likert1">
-          <p class="survey-paragraph">1. The action is always morally correct if the consequences produce more happiness than harm (Act Util)          </p>
+          <p class="survey-paragraph">1. Pedestrians’ lives should be preserved over those in the vehicle (U)     </p>
           <div>
-           <input class="likert" type="radio" id="OPTION-1" name="L1" value="1" required>
+           <input class="likert" type="radio" id="OPTION-1" name="L4" value="1" required>
              <label class="scenario-option" for="OPTION-1">AGREE</label>
-           <input class="likert" type="radio" id="OPTION-2" name="L1" value="0">
+           <input class="likert" type="radio" id="OPTION-2" name="L4" value="0">
              <label class="scenario-option" for="OPTION-2">DISAGREE</label><br>
           </div>
         </div> 
       <!--Likert 2-->
       <div id="likert2">
-        <p class="survey-paragraph">2. Morality is the matter of duty, whether something is right or wrong does not depend on the consequence but on whether the action is right or wrong. (Deon)            </p>
+        <p class="survey-paragraph">2. The lives of children should be preserved even if more casualties result from saving them. (D)       </p>
         <div>
-         <input class="likert" type="radio" id="OPTION-3" name="L2" value="1" required>
+         <input class="likert" type="radio" id="OPTION-3" name="L5" value="0" required>
            <label class="scenario-option" for="OPTION-3">AGREE</label>
-         <input class="likert" type="radio" id="OPTION-4" name="L2" value="0">
+         <input class="likert" type="radio" id="OPTION-4" name="L5" value="1">
            <label class="scenario-option" for="OPTION-4">DISAGREE</label><br>
         </div>
        </div>
       <!--Likert 3-->
       <div id="likert3">
-        <p class="survey-paragraph">3. An action is morally right if it conforms to the rules which lead to the greatest good or happiness, but rules must always be followed. (Rule Util)            </p>
+        <p class="survey-paragraph">3. My view on which party should be saved would be affected if I was involved. (D)             </p>
         <div>
-         <input class="likert" type="radio" id="OPTION-5" name="L3" value="0" required>
+         <input class="likert" type="radio" id="OPTION-5" name="L6" value="0" required>
            <label class="scenario-option" for="OPTION-5">AGREE</label>
-         <input class="likert" type="radio" id="OPTION-6" name="L3" value="1">
+         <input class="likert" type="radio" id="OPTION-6" name="L6" value="1">
            <label class="scenario-option" for="OPTION-6">DISAGREE</label><br>
         </div>
        </div>
@@ -83,15 +83,17 @@ $_SESSION["variable6"]=$_POST["variable6"];//E2S3 Variable
         <p class="survey-paragraph" id="target" style="display: none;"></p>
     </div>
     <div>
-        <form action="DeontologyPath3.php" method="POST">
+        <form action="UtilitarianPath3.php" method="POST">
             <button class="start-button" id="deontology" style="display: none;">Next Page (D)</button>
-            <input type="hidden" name="deontology" value="deontology-path">
+            <input type="hidden" name="path2" value="deontology-path2">
+            <input type="hidden" id="target" name="total" value="">
         </form>
     </div>
     <div>
-        <form action="UtilitarianPath3.php" method="POST">
+        <form action="DeontologyPath3.php" method="POST">
             <button class="start-button" id="utilitarian" style="display: none;">Next Page (U)</button>
-            <input type="hidden" name="utilitarian" value="utilitarian-path">
+            <input type="hidden" name="path2" value="utilitarian-path2">
+            <input type="hidden" id="target" name="total" value="">
         </form>
     </div>
 </div>

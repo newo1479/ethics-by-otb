@@ -1,9 +1,5 @@
 <?php session_start(); ?>
 <?php 
-$_SESSION["E1S1"]=$_POST["E1S1"];//E1S1 Variable
-$_SESSION["E1S2"]=$_POST["E1S2"];//E1S2 Variable
-$_SESSION["E1S3"]=$_POST["E1S3"];//E1S3 Variable
-
 $number = Array(1,2,3,4,5); //Create array with scenario numbers
 
 $_SESSION['number'] = $number; //Turn array into session variable to allow access across all pages
@@ -11,6 +7,8 @@ $_SESSION['number'] = $number; //Turn array into session variable to allow acces
 $randomNumber = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 1
 $randomNumber1 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 2
 $randomNumber2 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 3
+$_SESSION["Path1"]=$_POST["path1"];//Path Variable
+
 
 include('connect.php'); //Database details
 $conn = connect(); //Connect to the database

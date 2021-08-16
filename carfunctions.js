@@ -125,6 +125,35 @@ function e2s1Lock() {
       m.style.display = "block";
     }
   }
+
+  function e4s1Lock() {
+    if (document.getElementById("example4-stage1-utilitarian-ni").checked) {
+      document.getElementById("example4-stage1-deontology-i").disabled = true;
+    } else if (document.getElementById("example4-stage1-deontology-i").checked) {
+      document.getElementById("example4-stage1-utilitarian-ni").disabled = true;
+    }
+    var e3s1 = document.getElementById("example13");
+    if (e3s1.style.display === "none") {
+      e3s1.style.display = "block";
+    }
+    var e3s1_nextbutton = document.getElementById("e3s2-button");
+    if (e3s1_nextbutton.style.display === "none") {
+      e3s1_nextbutton.style.display = "block";
+    }
+  }
+  
+  //Lock e4s2 and Display e4s3
+  function e4s2Lock() {
+    if (document.getElementById("example4-stage2-utilitarian-ni").checked) {
+      document.getElementById("example4-stage2-deontology-i").disabled = true;
+    } else if (document.getElementById("example4-stage2-deontology-i").checked) {
+      document.getElementById("example4-stage2-utilitarian-ni").disabled = true;
+    }
+    var e3s2 = document.getElementById("example9");
+    if (e3s2.style.display === "none") {
+      e3s2.style.display = "block";
+    }
+  }
   //Display S4 Submit Button
   function submitExamples4() {
     var x = document.getElementById("e4-submit");

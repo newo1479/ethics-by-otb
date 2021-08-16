@@ -1,13 +1,13 @@
 <?php session_start(); ?>
 <?php 
-$_SESSION["L1"]=$_POST["L1"];//L1 Variable
-$_SESSION["L2"]=$_POST["L2"];//L2 Variable
-$_SESSION["L3"]=$_POST["L3"];//L3 Variable
-$_SESSION["L4"]=$_POST["L4"];//L4 Variable
-$_SESSION["L5"]=$_POST["L5"];//L5 Variable
-$_SESSION["L6"]=$_POST["L6"];//L6 Variable
-$_SESSION["L7"]=$_POST["L7"];//L7 Variable
-$_SESSION["L8"]=$_POST["L8"];//L8 Variable
+$_SESSION["L7"]=$_POST["L7"];//L13 Variable
+$_SESSION["L8"]=$_POST["L8"];//L14 Variable
+$_SESSION["L9"]=$_POST["L9"];//L9 Variable
+$_SESSION["L10"]=$_POST["L10"];//L10 Variable
+$_SESSION["L11"]=$_POST["L11"];//L11 Variable
+$_SESSION["L12"]=$_POST["L12"];//L12 Variable
+$_SESSION["L13"]=$_POST["L13"];//L13 Variable
+$_SESSION["L14"]=$_POST["L14"];//L14 Variable
 ?>
 <!DOCTYPE html>
 <html lang="en">

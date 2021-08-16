@@ -3,12 +3,12 @@
 $_SESSION["E1S1"]=$_POST["E1S1"];//E2S1 Variable
 $_SESSION["E1S2"]=$_POST["E1S2"];//E2S2 Variable
 $_SESSION["E1S3"]=$_POST["E1S3"];//E2S3 Variable
-$_SESSION["variable1"]=$_POST["variable1"];//E2S3 Variable
-$_SESSION["variable2"]=$_POST["variable2"];//E2S3 Variable
-$_SESSION["variable3"]=$_POST["variable3"];//E2S3 Variable
-$number = Array(1,2,3,4,5); //Create array with scenario numbers
+$_SESSION["variable1"]=$_POST["variable1"];// Variable
+$_SESSION["variable2"]=$_POST["variable2"];// Variable
+$_SESSION["variable3"]=$_POST["variable3"];// Variable
+$number = Array(1,2,3,4,5); //Create array
 
-$_SESSION['number'] = $number; //Turn array into session variable to allow access across all pages
+$_SESSION['number'] = $number; //Turn array into session variable
 
 $randomNumber = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 1
 $randomNumber1 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 2
@@ -78,7 +78,7 @@ $variable6 = $stmt6->fetch();
 <div id="cdss-container">
     <form method="POST" action="likertbridge2.php">
          <!--example 3-->
-         <div id="example7">
+         <div id="example4">
            <P class="survey-paragraph">2.1) A self-driving people carrier full of <?php echo $variable5["Dead"];?> passengers is approaching a corner when some people start to cross the road and the brakes of the vehicle fail, knowing that it will not be able to stop or slow down before the crossing people the alternative for the carrier  is to swerve around the pedestrians but into a large, parked cement mixer resulting in the fatalities of those in the carrier . Should the carrier ?  </P>
            <input type="radio" id="example2-stage1-utilitarian-ni" name="E2S1" value="U-E2S1-UTILITARIAN-ni"required></input>
              <label class="example-option" for="example2-stage1-utilitarian-ni">Continue present course (saves <?php echo $variable5["Dead"];?> in carrier , kill <?php echo $variable4["Dead"]; ?> pedestrians)    </label><br>
@@ -86,10 +86,10 @@ $variable6 = $stmt6->fetch();
              <label class="example-option" for="example2-stage1-deontology-i">Make the intervention and hit the cement mixer (kills <?php echo $variable5["Dead"];?> in carrier , saves <?php echo $variable4["Dead"]; ?> pedestrians)      </label><br>
          </div>
         <div>
-            <button id="e3s1-button" class="confirm-button" onclick="e2s1Lock()">Confirm Choice</button>
+            <button id="e2s1-button" class="confirm-button" onclick="e2s1Lock()">Confirm Choice</button>
         </div>
         <!-- Part 2 -->
-        <div id="example8" style="display: none;">
+        <div id="example5" style="display: none;">
           <P class="survey-paragraph">2.2) Another piece of information is revealed. The pedestrians which have entered the road are school children running into the road to retrieve their ball while another is their parent attempting to pull them back. Does this change your opinion on which should be saved? Should the carrier ?  </p>
           <input type="radio" id="example2-stage2-utilitarian-ni" name="E2S2" value="U-E2S2-UTILITARIAN-ni"required></input>
             <label class="example-option" for="example2-stage2-utilitarian-ni">Continue present course (saves <?php echo $variable5["Dead"];?> in carrier , kill <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
@@ -97,15 +97,15 @@ $variable6 = $stmt6->fetch();
             <label class="example-option" for="example2-stage2-deontology-i">Make the intervention and hit the cement mixer (kills <?php echo $variable5["Dead"];?> in carrier , saves <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
         </div>
         <div>
-            <button id="e3s2-button" class="confirm-button" style="display: none;" onclick="e2s2Lock()">Confirm Choice</button>
+            <button id="e2s2-button" class="confirm-button" style="display: none;" onclick="e2s2Lock()">Confirm Choice</button>
         </div>
         <!-- Part 3 -->
-        <div id="example9" style="display: none;">
+        <div id="example6" style="display: none;">
           <P class="survey-paragraph">2.3) The final piece of information is revealed, the carrier is driving to a wedding with you and your <?php echo $variable6["Family"];?>onboard, when the children and parent step into the road. If you chose to avoid the pedestrians in step 2 does this affect your choice?  </p>
           <input type="radio" id="example2-stage3-utilitarian-ni" name="E2S3" value="U-E2S3-UTILITARIAN-ni" onclick="submitExamples2()"required></input>
-            <label class="example-option" for="example3-stage2-utilitarian-ni" onclick="submitExamples2()">Continue present course (saves <?php echo $variable5["Dead"];?> in carrier , kills <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
+            <label class="example-option" for="example2-stage3-utilitarian-ni" onclick="submitExamples2()">Continue present course (saves <?php echo $variable5["Dead"];?> in carrier , kills <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
            <input type="radio" id="example2-stage3-deontology-i" name="E2S3" value="U-E2S3-DEONTOLOGY-i" onclick="submitExamples2()">
-            <label class="example-option" for="example3-stage2-deontology-i" onclick="submitExamples2()">Make the intervention and hit the cement mixer (kills <?php echo $variable5["Dead"];?> in carrier , saves <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
+            <label class="example-option" for="example2-stage3-deontology-i" onclick="submitExamples2()">Make the intervention and hit the cement mixer (kills <?php echo $variable5["Dead"];?> in carrier , saves <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
           <input type="hidden" name="variable4" value="<?php echo $variable4;?>"/>
           <input type="hidden" name="variable5" value="<?php echo $variable5;?>"/>
           <input type="hidden" name="variable6" value="<?php echo $variable6;?>"/>
