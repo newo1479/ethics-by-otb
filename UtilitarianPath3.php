@@ -5,7 +5,7 @@ $_SESSION["L5"]=$_POST["L5"];// Variable
 $_SESSION["L6"]=$_POST["L6"];// Variable
 
 $_SESSION["path2"]=$_POST["path2"];// Variable
-$_SESSION['Total2']=$_POST['total2'];//Score
+$_SESSION['total2']=$_POST['total2'];//Score
 
 $number = Array(1,2,3,4,5); //Create array
 

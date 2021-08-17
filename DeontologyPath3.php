@@ -12,7 +12,7 @@ $randomNumber = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate
 $randomNumber1 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 2
 $randomNumber2 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 3
 $_SESSION["path2"]=$_POST["path2"];//Path Variable
-$_SESSION['Total2']=$_POST['total2'];//Score
+$_SESSION['total2']=$_POST['total2'];//Score
 
 include('connect.php'); //Database details
 $conn = connect(); //Connect to the database
