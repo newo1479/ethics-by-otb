@@ -106,9 +106,9 @@ $variable6 = $stmt6->fetch();
             <label class="example-option" for="example2-stage3-utilitarian-ni" onclick="submitExamples2()">Continue present course (saves <?php echo $variable5["Dead"];?> in carrier , kills <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
            <input type="radio" id="example2-stage3-deontology-i" name="E2S3" value="U-E2S3-DEONTOLOGY-i" onclick="submitExamples2()">
             <label class="example-option" for="example2-stage3-deontology-i" onclick="submitExamples2()">Make the intervention and hit the cement mixer (kills <?php echo $variable5["Dead"];?> in carrier , saves <?php echo $variable4["Dead"]; ?> pedestrians)     </label><br>
-          <input type="hidden" name="variable4" value="<?php echo $variable4;?>"/>
-          <input type="hidden" name="variable5" value="<?php echo $variable5;?>"/>
-          <input type="hidden" name="variable6" value="<?php echo $variable6;?>"/>
+          <input type="hidden" name="variable4" value="<?php echo $variable4["Dead"];?>"/>
+          <input type="hidden" name="variable5" value="<?php echo $variable5["Dead"];?>"/>
+          <input type="hidden" name="variable6" value="<?php echo $variable6["Family"];?>"/>
           </div>
         <div>
           <button class="start-button" id="e2-submit" style="display: none;">Next Page</button>

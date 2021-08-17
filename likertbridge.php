@@ -80,14 +80,14 @@
         <form action="DeontologyPath1.php" method="POST">
             <button class="start-button" id="deontology" style="display: none;">Next Page (D)</button>
             <input type="hidden" name="path1" value="deontology-path">
-            <input type="hidden" id="target" name="total" value="">
+            <input type="hidden" name="total" id="deon-score" value="">
         </form>
     </div>
     <div>
         <form action="UtilitarianPath1.php" method="POST">
             <button class="start-button" id="utilitarian" style="display: none;">Next Page (U)</button>
             <input type="hidden" name="path1" value="utilitarian-path">
-            <input type="hidden" id="target" name="total" value="">
+            <input type="hidden" name="total" id="util-score" value="">
 
 
         </form>
