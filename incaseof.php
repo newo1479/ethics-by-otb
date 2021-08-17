@@ -1,4 +1,15 @@
- /*    //SQL Create Tables
+<html>
+   <head>
+      <title>Creating MySQL Table</title>
+   </head>
+<body>
+    <?php session_start(); ?>
+    <?php 
+    include('connect.php');
+    $conn = connect();
+    try
+{
+       //SQL Create Tables
     $sql = "CREATE TABLE IF NOT EXISTS StageOneUtilitarian (
         Value varchar(600),
         ScenarioNumber int,
@@ -35,7 +46,7 @@
         PRIMARY KEY (Name)
         )";
         $conn->exec($sql3);
-    $sql4 = "CREATE TABLE IF NOT EXISTS StageTwoDeontolgy (
+    $sql4 = "CREATE TABLE IF NOT EXISTS StageTwoDeontology (
         Value varchar(600),
         ScenarioNumber int,
         Name varchar(600),
@@ -44,7 +55,7 @@
         PRIMARY KEY (Name)
         )";
         $conn->exec($sql4);
-    $sql5 = "CREATE TABLE IF NOT EXISTS StageThreeDeontolgy (
+    $sql5 = "CREATE TABLE IF NOT EXISTS StageThreeDeontology (
         Value varchar(600),
         ScenarioNumber int,
         Name varchar(600),
@@ -88,4 +99,22 @@
         PRIMARY KEY (Name)
         )";
         $conn->exec($sql10);
-    }*/
+    $sql11 = "CREATE TABLE IF NOT EXISTS CarScenarios (
+        ScenarioNumber int,
+        LikertNumber int,
+        StageOne varchar(650),
+        StageTwo varchar(650),
+        StageThree varchar(650),
+        PRIMARY KEY (ScenarioNumber)
+        )";
+            $conn->exec($sql11)
+}
+
+        catch (PDOException $e) {
+             echo "<br><p class='survey-paragraph'>An error has occured while submitting your response. Please return to the Scenarios page and recomplete they survey. <br><br>" . $e->getMessage() . "</p>";
+    }
+        $conn = null;
+
+        ?>
+</body>
+</html>
