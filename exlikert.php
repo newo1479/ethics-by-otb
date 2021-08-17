@@ -128,7 +128,7 @@ $_SESSION["E5S2"]=$_POST["E5S2"];//E5S2 Variable
                </div>
         <!--Likert 6-->
                <div id="likert6" >
-                <p class="survey-paragraph">6. Humans should presereve strict control over self-thinking machines </p>
+                <p class="survey-paragraph">6. Humans should preserve strict control over self-thinking machines </p>
                 <div>
                  <input type="radio" id="likert6-1" name="L6" value="L6-1"required>
                    <label class="example-option" for="likert6-1">STRONGLY AGREE</label>
@@ -160,7 +160,7 @@ $_SESSION["E5S2"]=$_POST["E5S2"];//E5S2 Variable
                  </div>
          <!--Likert 8-->
                <div id="likert8" >
-                <p class="survey-paragraph">8. Those who are abiding by the law should have their lives preserved even if more casualties will result. </p>
+                <p class="survey-paragraph">8. Self-Driving car's decision making should be flexible and situational for example if a pregnant woman is rushing to the hosptial </p>
                 <div>
                  <input type="radio" id="likert8-1" name="L8" value="L8-1"required>
                    <label class="example-option" for="likert8-1" >STRONGLY AGREE</label>

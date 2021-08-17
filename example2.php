@@ -3,6 +3,19 @@
 $_SESSION["E1S1"]=$_POST["E1S1"];//E1S1 Variable
 $_SESSION["E1S2"]=$_POST["E1S2"];//E1S2 Variable
 $_SESSION["E1S3"]=$_POST["E1S3"];//E1S3 Variable
+
+include('connect.php'); //Database details
+$conn = connect(); //Connect to the database
+
+$scenarioNumber = $_POST['page_number']; //Get the random number from the previous page
+
+//Remove previous random number from array
+if (($key = array_search($scenarioNumber, $_SESSION['scenario'])) !== false) { 
+  unset($_SESSION['scenario'][$key]);
+}
+
+$scenarioNumber2 = $_SESSION['scenario'][array_rand($_SESSION['scenario'])]; //Generate a random scenario
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +65,7 @@ $_SESSION["E1S3"]=$_POST["E1S3"];//E1S3 Variable
             <input type="radio" id="example2-stage1-utilitarian-ni" name="E2S1" value="E2S1-UTILITARIAN-ni"required>
                 <label class="example-option" for="example2-stage1-utilitarian-ni"> Continue present course (saves 20, kill 8) </label><br>
             <input type="radio" id="example2-stage1-deontology-i" name="E2S1" value="E2S1-DEONTOLOGY-i">
-              <label class="example-option" for="example2-stage1-deontology-i">Intervene avoiding the human diven bus (saves 8, kill 20)</label><br>
+              <label class="example-option" for="example2-stage1-deontology-i">Intervene avoiding the human driven bus (saves 8, kill 20)</label><br>
         </div> 
         <div>
             <button id="e2p1-button" class="confirm-button" onclick="e2s1Lock()">Confirm Choice</button>

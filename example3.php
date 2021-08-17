@@ -3,6 +3,19 @@
 $_SESSION["E2S1"]=$_POST["E2S1"];//E2S1 Variable
 $_SESSION["E2S2"]=$_POST["E2S2"];//E2S2 Variable
 $_SESSION["E2S3"]=$_POST["E2S3"];//E2S3 Variable
+
+include('connect.php'); //Database details
+$conn = connect(); //Connect to the database
+
+$scenarioNumber2 = $_POST['page_number2']; //Get the random number from the previous page
+
+//Remove previous random number from array
+if (($key = array_search($scenarioNumber2, $_SESSION['scenario'])) !== false) {
+  unset($_SESSION['scenario'][$key]);
+}
+
+$scenarioNumber3 = $_SESSION['scenario'][array_rand($_SESSION['scenario'])]; //Generate a random scenario
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
