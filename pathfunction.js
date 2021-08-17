@@ -45,6 +45,7 @@ function displayRadioValue() {
     if (button2.style.display === "none") {
       button2.style.display = "block";
     }
+    var hidden = document.getElementById("confirm");
     if (hidden.style.display === "block") {
       hidden.style.display = "none";
     }

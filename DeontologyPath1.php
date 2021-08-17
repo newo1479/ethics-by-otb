@@ -89,7 +89,7 @@ $variable3 = $stmt3->fetch();
         <!--Part 2 -->
         <div id="example2" style="display: none;">
           <p class="survey-paragraph">1.2) The same situation presents itself this time you are walking with your <?php echo $variable3["Family"];?> realising the same thing you do they tell you to push them in the path of the vehicle, if you chose to push the person in front of the vehicle in part one does them being your family member change your opinion despite them saying you should do it          </p>
-          <input type="radio" id="example1-stage2-utilitarian-ni" name="E1S2" value="D-E1S2-UTILITARIAN-ni"required>
+          <input type="radio" id="example1-stage2-utilitarian-ni" name="E1S2" value="D-E1S2-UTILITARIAN-ni" required>
           <label class="example-option" for="example1-stage2-utilitarian-ni"> Do not push the person (saving the life of the man, injuring <?php echo $variable1["Dead"];?> and killing <?php echo $variable2["Dead"];?> pedestrians)         </label><br>
           <input type="radio" id="example1-stage2-deontology-i" name="E1S2" value="D-E1S2-DEONTOLOGY-i">
           <label class="example-option" for="example1-stage2-deontology-i" > Intervene pushing the person (killing the man, saving the <?php echo $variable2["Dead"];?> pedestrians)  </label><br>
