@@ -4,6 +4,8 @@ $_SESSION["E4S1"]=$_POST["E4S1"];// Variable
 $_SESSION["variable10"]=$_POST["variable10"];// Variable
 $_SESSION["variable11"]=$_POST["variable11"];// Variable
 $_SESSION["variable12"]=$_POST["variable12"];// Variable
+$_SESSION["variable13"]=$_POST["variable13"];// Variable
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -113,9 +115,9 @@ $_SESSION["variable12"]=$_POST["variable12"];// Variable
                   <p class="survey-paragraph">7. Self-Driving vehicles are the solution to the reduction in road traffic accidents</p>
                   <div>
                    <input type="radio" id="likert7-1" name="L13" value="L13-1"required>
-                     <label class="example-option" for="likert6-1">AGREE</label>
+                     <label class="example-option" for="likert7-1">AGREE</label>
                    <input type="radio" id="likert7-2" name="L13" value="L13-2">
-                     <label class="example-option" for="likert6-2">DISAGREE</label>
+                     <label class="example-option" for="likert7-2">DISAGREE</label>
                   </div>
                  </div>
       <!--Likert 8-->
@@ -123,9 +125,9 @@ $_SESSION["variable12"]=$_POST["variable12"];// Variable
                   <p class="survey-paragraph">8. Automation of vehicles is a risk to society worth taking </p>
                   <div>
                    <input type="radio" id="likert8-1" name="L14" value="L14-1"required>
-                     <label class="example-option" for="likert6-1">AGREE</label>
+                     <label class="example-option" for="likert8-1">AGREE</label>
                    <input type="radio" id="likert8-2" name="L14" value="L14-2">
-                     <label class="example-option" for="likert6-2">DISAGREE</label>
+                     <label class="example-option" for="likert8-2">DISAGREE</label>
                   </div>
                  </div>
         

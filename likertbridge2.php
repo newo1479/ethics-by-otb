@@ -1,11 +1,11 @@
 <?php session_start(); ?>
 <?php 
-$_SESSION["E2S1"]=$_POST["E2S1"];//E1S1 Variable
-$_SESSION["E2S2"]=$_POST["E2S2"];//E1S2 Variable
-$_SESSION["E2S3"]=$_POST["E2S3"];//E1S3 Variable
-$_SESSION["variable4"]=$_POST["variable4"];//E2S3 Variable
-$_SESSION["variable5"]=$_POST["variable5"];//E2S3 Variable
-$_SESSION["variable6"]=$_POST["variable6"];//E2S3 Variable
+$_SESSION["E2S1"]=$_POST["E2S1"];// Variable
+$_SESSION["E2S2"]=$_POST["E2S2"];// Variable
+$_SESSION["E2S3"]=$_POST["E2S3"];// Variable
+$_SESSION["variable4"]=$_POST["variable4"];// Variable
+$_SESSION["variable5"]=$_POST["variable5"];// Variable
+$_SESSION["variable6"]=$_POST["variable6"];// Variable
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,52 +48,53 @@ $_SESSION["variable6"]=$_POST["variable6"];//E2S3 Variable
   <h3 id="title-cdss">HIT Survey</h3>
 <div id="cdss-container">
 <form method="POST" action="#">
-        <div id="likert1">
+        <div id="likert4">
           <p class="survey-paragraph">1. Pedestrians’ lives should be preserved over those in the vehicle (U)     </p>
           <div>
-           <input class="likert" type="radio" id="OPTION-1" name="L4" value="1" required>
-             <label class="scenario-option" for="OPTION-1">AGREE</label>
-           <input class="likert" type="radio" id="OPTION-2" name="L4" value="0">
-             <label class="scenario-option" for="OPTION-2">DISAGREE</label><br>
+           <input class="likert2" type="radio" id="OPTION-7" name="L4" value="1" required>
+             <label class="scenario-option" for="OPTION-7">AGREE</label>
+           <input class="likert2" type="radio" id="OPTION-8" name="L4" value="0">
+             <label class="scenario-option" for="OPTION-8">DISAGREE</label><br>
           </div>
         </div> 
       <!--Likert 2-->
-      <div id="likert2">
+      <div id="likert5">
         <p class="survey-paragraph">2. The lives of children should be preserved even if more casualties result from saving them. (D)       </p>
         <div>
-         <input class="likert" type="radio" id="OPTION-3" name="L5" value="0" required>
-           <label class="scenario-option" for="OPTION-3">AGREE</label>
-         <input class="likert" type="radio" id="OPTION-4" name="L5" value="1">
-           <label class="scenario-option" for="OPTION-4">DISAGREE</label><br>
+         <input class="likert2" type="radio" id="OPTION-9" name="L5" value="0" required>
+           <label class="scenario-option" for="OPTION-9">AGREE</label>
+         <input class="likert2" type="radio" id="OPTION-10" name="L5" value="1">
+           <label class="scenario-option" for="OPTION-10">DISAGREE</label><br>
         </div>
        </div>
       <!--Likert 3-->
-      <div id="likert3">
+      <div id="likert6">
         <p class="survey-paragraph">3. My view on which party should be saved would be affected if I was involved. (D)             </p>
         <div>
-         <input class="likert" type="radio" id="OPTION-5" name="L6" value="0" required>
-           <label class="scenario-option" for="OPTION-5">AGREE</label>
-         <input class="likert" type="radio" id="OPTION-6" name="L6" value="1">
-           <label class="scenario-option" for="OPTION-6">DISAGREE</label><br>
+         <input class="likert2" type="radio" id="OPTION-11" name="L6" value="0" required>
+           <label class="scenario-option" for="OPTION-11">AGREE</label>
+         <input class="likert2" type="radio" id="OPTION-12" name="L6" value="1">
+           <label class="scenario-option" for="OPTION-12">DISAGREE</label><br>
         </div>
        </div>
-       <input class="start-button" id="confirm" type="button" onclick="displayRadioValue()" style="display: block;" value="Confirm choice"><br>
+       <input class="start-button" id="confirm2" type="button" onclick="displayRadioValue2()" style="display: block;" value="Confirm choice"><br>
     </form>    
     <div>
-        <p class="survey-paragraph" id="target" style="display: none;"></p>
+        <p class="survey-paragraph" id="target2" style="display: none;"></p>
     </div>
     <div>
         <form action="UtilitarianPath3.php" method="POST">
-            <button class="start-button" id="deontology" style="display: none;">Next Page (D)</button>
-            <input type="hidden" name="path2" value="deontology-path2">
-            <input type="hidden" id="target" name="total" value="">
+            <button class="start-button" id="deontology2" style="display: none;">Next Page (U)</button>
+            <input type="hidden" name="path2" value="deontology-path">
+            <input type="hidden" name="total2" id="deon-score2" value="">
         </form>
     </div>
     <div>
         <form action="DeontologyPath3.php" method="POST">
-            <button class="start-button" id="utilitarian" style="display: none;">Next Page (U)</button>
-            <input type="hidden" name="path2" value="utilitarian-path2">
-            <input type="hidden" id="target" name="total" value="">
+            <button class="start-button" id="utilitarian2" style="display: none;">Next Page (D)</button>
+            <input type="hidden" name="path2" value="utilitarian-path">
+            <input type="hidden" name="total2" id="util-score2" value="">
+            
         </form>
     </div>
 </div>

@@ -2,7 +2,7 @@
 <div> <!--Session Variables-->
   <?php 
 //Regular VARIABLES
- //D SCENARIO 1 VARIABLES
+/* //D SCENARIO 1 VARIABLES
   $E1S1=$_SESSION["E1S1"];//E1S1 Variable
   $E1S2=$_SESSION["E1S2"];//E1S2 Variable
   $E1S3=$_SESSION["E1S3"];//E1S3 Variable
@@ -47,12 +47,7 @@
   $L11=$_SESSION["L11"];//L6 Variable
   $L12=$_SESSION["L12"];//L6 Variable
   $L13=$_SESSION["L13"];//L6 Variable
-  $L14=$_SESSION["L14"];//L6 Variable
-
-  //Results
-  $score=$_SESSION['total'];
-  $score2=$_SESSION['total2'];
-  $result = $score + $score2;
+  $L14=$_SESSION["L14"];//L6 Variable*/
   ?>
 </div>
 <!DOCTYPE html>
@@ -94,29 +89,7 @@
     <br>
     <br>
 </div>
-<div> <!--Echo Variables-->
- <?php 
- /*
- echo $result;
 
- if($result = "6"){
-   echo "You selected all the utilitarian options";
- } elseif($result = "5"){
-  echo "You selected most of the utilitarian options";
- } elseif ($result = "4"){
-  echo "You selected more of the utilitarian options";
- } elseif ($result = "3"){
-  echo "You are between utilitarian and deontology";
- } elseif ($result = "2"){
-  echo "You selected more of the deontology options";
- } elseif ($result = "1"){
-  echo "You selected most of the deontology options";
- } else {
-  echo "You selected all of the deontology options";
- }*/
-
- ?>
-</div>
 <div> <!--Thank you statement-->
   <?php //echo "<p class='survey-paragraph'>Thank you for participating in this survey.</p>" ?>
 </div>
@@ -126,7 +99,7 @@
   $conn = connect();
   try{
    //Create Table
-   /* $sql = "CREATE TABLE IF NOT EXISTS Carresults3 (
+    $sql = "CREATE TABLE IF NOT EXISTS Carresults3 (
        Responderid int NOT NULL AUTO_INCREMENT,
        pathtaken1 varchar(500),
        e1s1 varchar(500),
@@ -150,7 +123,7 @@
        variable10 int,
        variable11 int,
        variable12 varchar(500),
-       variable13 int, 
+       variable13 varchar(500), 
        l7 varchar(500),
        l8 varchar(500),
        l9 varchar(500),
@@ -165,8 +138,8 @@
        result varchar(50),
        PRIMARY KEY(Responderid)
        )";
-      $conn->exec($sql);*/
-     $sql = "INSERT INTO Carresults3 (
+      $conn->exec($sql);
+    /* $sql = "INSERT INTO Carresults3 (
       pathtaken1,
       e1s1,
       e1s2,
@@ -200,8 +173,7 @@
       l14,
       age,
       gender,
-      education,
-      result)
+      education)
       VALUES (
       '$path1',
       '$E1S1',
@@ -236,9 +208,7 @@
       '$L14',
       '".$_POST["AGE"]."',
       '".$_POST["gender"]."',
-      '".$_POST["education"]."',
-      '$result'
-      )";
+      '".$_POST["education"]."')";*/
   // use exec() because no results are returned
   $conn->exec($sql);
   echo "<p id='title-cdss'>Thank you for participating in this survey.</p>";

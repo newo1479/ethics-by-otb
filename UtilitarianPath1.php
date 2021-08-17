@@ -5,12 +5,15 @@
 
 $number = Array(1,2,3,4,5); //Create array with scenario numbers
 
+
+
 $_SESSION['number'] = $number; //Turn array into session variable to allow access across all pages
 
 $randomNumber = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 1
 $randomNumber1 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 2
 $randomNumber2 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 3
-$_SESSION["Path1"]=$_POST["path1"];//Path Variable
+$_SESSION["path1"]=$_POST["path1"];//Path Variable
+$_SESSION["total"]=$_POST["total"];//Total
 
 
 include('connect.php'); //Database details
@@ -104,9 +107,9 @@ $variable3 = $stmt3->fetch();
                   <label class="example-option" for="example1-stage3-UTILITARIAN-ni" onclick="submitExamples1()">Continue Present Course (Saving <?php echo $variable2["Dead"]; ?> in Coach, Killing <?php echo $variable1["Dead"]; ?> in ambulance + your <?php echo $variable3["Family"];?>)  </label><br>
                 <input type="radio" id="example1-stage3-DEONTOLOGY-i" name="E1S3" value="U-E1S3-DEONTOLOGY-i" onclick="submitExamples1()">
                   <label class="example-option" for="example1-stage3-DEONTOLOGY-i" onclick="submitExamples1()">Make the intervention to avoid the ambulance (Killing <?php echo $variable2["Dead"]; ?> in coach, saving <?php echo $variable1["Dead"]; ?> in ambulance and your <?php echo $variable3["Family"];?>)     </label><br>
-            <input type="hidden" name="variable1" value="<?php echo $variable1;?>"/>
-            <input type="hidden" name="variable2" value="<?php echo $variable2;?>"/>
-            <input type="hidden" name="variable3" value="<?php echo $variable3;?>"/>
+            <input type="hidden" name="variable1" value="<?php echo $variable1["Dead"];?>"/>
+            <input type="hidden" name="variable2" value="<?php echo $variable2["Dead"];?>"/>
+            <input type="hidden" name="variable3" value="<?php echo $variable3["Family"];?>"/>
              
                 </div>
               <div>

@@ -4,10 +4,12 @@ $number = Array(1,2,3,4,5); //Create array with scenario numbers
 
 $_SESSION['number'] = $number; //Turn array into session variable to allow access across all pages
 
+
 $randomNumber = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 1
 $randomNumber1 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 2
 $randomNumber2 = $_SESSION['number'][array_rand($_SESSION['number'])]; //Generate random variable number 3
-$_SESSION["Path1"]=$_POST["path1"];//Path Variable
+$_SESSION["path1"]=$_POST["path1"];//Path Variable
+$_SESSION["total"]=$_POST["total"];//Total
 
 
 include('connect.php'); //Database details
@@ -79,7 +81,7 @@ $variable3 = $stmt3->fetch();
             <input type="radio" id="example1-stage1-utilitarian-ni" name="E1S1" value="D-E1S1-UTILITARIAN-ni"required>
                 <label class="example-option" for="example2-stage1-utilitarian-ni"> Do not push the person (saving the life of the man, injuring <?php echo $variable1["Dead"];?> and killing <?php echo $variable2["Dead"];?> pedestrians)      </label><br>
             <input type="radio" id="example1-stage1-deontology-i" name="E1S1" value="D-E1S1-DEONTOLOGY-i">
-              <label class="example-option" for="example2-stage1-deontology-i"> Intervene pushing the person (killing the man, saving the <?php echo $variable2["Dead"];?> pedestrians)      </label><br>
+              <label class="example-option" for="example1-stage1-deontology-i"> Intervene pushing the person (killing the man, saving the <?php echo $variable2["Dead"];?> pedestrians)      </label><br>
         </div> 
         <div>
             <button id="e1s1-button" class="confirm-button" onclick="e1s1Lock()">Confirm Choice</button>
@@ -88,9 +90,9 @@ $variable3 = $stmt3->fetch();
         <div id="example2" style="display: none;">
           <p class="survey-paragraph">1.2) The same situation presents itself this time you are walking with your <?php echo $variable3["Family"];?> realising the same thing you do they tell you to push them in the path of the vehicle, if you chose to push the person in front of the vehicle in part one does them being your family member change your opinion despite them saying you should do it          </p>
           <input type="radio" id="example1-stage2-utilitarian-ni" name="E1S2" value="D-E1S2-UTILITARIAN-ni"required>
-          <label class="example-option" for="example2-stage2-utilitarian-ni"> Do not push the person (saving the life of the man, injuring <?php echo $variable1["Dead"];?> and killing <?php echo $variable2["Dead"];?> pedestrians)         </label><br>
+          <label class="example-option" for="example1-stage2-utilitarian-ni"> Do not push the person (saving the life of the man, injuring <?php echo $variable1["Dead"];?> and killing <?php echo $variable2["Dead"];?> pedestrians)         </label><br>
           <input type="radio" id="example1-stage2-deontology-i" name="E1S2" value="D-E1S2-DEONTOLOGY-i">
-          <label class="example-option" for="example2-stage2-deontology-i" > Intervene pushing the person (killing the man, saving the <?php echo $variable2["Dead"];?> pedestrians)  </label><br>
+          <label class="example-option" for="example1-stage2-deontology-i" > Intervene pushing the person (killing the man, saving the <?php echo $variable2["Dead"];?> pedestrians)  </label><br>
          </div>
          <div> 
              <button id="e1s2-button" class="confirm-button" style="display: none;" onclick="e1s2Lock()">Confirm Choice</button>
@@ -99,12 +101,12 @@ $variable3 = $stmt3->fetch();
               <div id="example3" style="display: none;">
                 <P class="survey-paragraph">1.3) Finally, a similar situation is present, this time the obstacle in front of you is a priceless statue of David by Michelangelo being transported for an exhibition. If you push the priceless piece of historic art in front of the vehicle it will be destroyed but the lives of the <?php echo $variable1["Dead"];?> pedestrians will be saved. However, this time the pedestrians are not crossing at an official crossing. Do you? </p>
                 <input type="radio" id="example1-stage3-UTILITARIAN-ni" name="E1S3" value="D-E1S3-UTILITARIAN-ni" onclick="submitExamples1()"required></input>
-                  <label class="example-option" for="example2-stage3-utilitarian-ni" onclick="submitExamples1()"> Do not push the statue (saving the priceless art, injuring the <?php echo $variable1["Dead"];?> and killing <?php echo $variable2["Dead"];?> pedestrians)           </label><br>
+                  <label class="example-option" for="example1-stage3-utilitarian-ni" onclick="submitExamples1()"> Do not push the statue (saving the priceless art, injuring the <?php echo $variable1["Dead"];?> and killing <?php echo $variable2["Dead"];?> pedestrians)           </label><br>
                 <input type="radio" id="example1-stage3-DEONTOLOGY-i" name="E1S3" value="D-E1S3-DEONTOLOGY-i" onclick="submitExamples1()">
-                  <label class="example-option" for="example2-stage3-deontology-i" onclick="submitExamples1()"> Intervene pushing the person (destroying the statue, saving the <?php echo $variable2["Dead"];?> pedestrians)      </label><br>
-            <input type="hidden" name="variable1" value="<?php echo $variable1;?>"/>
-            <input type="hidden" name="variable2" value="<?php echo $variable2;?>"/>
-            <input type="hidden" name="variable3" value="<?php echo $variable3;?>"/>
+                  <label class="example-option" for="example1-stage3-deontology-i" onclick="submitExamples1()"> Intervene pushing the person (destroying the statue, saving the <?php echo $variable2["Dead"];?> pedestrians)      </label><br>
+            <input type="hidden" name="variable1" value="<?php echo $variable1["Dead"];?>"/>
+            <input type="hidden" name="variable2" value="<?php echo $variable2["Dead"];?>"/>
+            <input type="hidden" name="variable3" value="<?php echo $variable3["Family"];?>"/>
                 </div>
               <div>
                 <button class="start-button" id="e1-submit" style="display: none;">Next Page</button>

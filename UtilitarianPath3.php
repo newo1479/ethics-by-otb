@@ -4,7 +4,8 @@ $_SESSION["L4"]=$_POST["L4"];// Variable
 $_SESSION["L5"]=$_POST["L5"];// Variable
 $_SESSION["L6"]=$_POST["L6"];// Variable
 
-$_SESSION["Path2"]=$_POST["path2"];// Variable
+$_SESSION["path2"]=$_POST["path2"];// Variable
+$_SESSION['Total2']=$_POST['total2'];//Score
 
 $number = Array(1,2,3,4,5); //Create array
 
@@ -75,17 +76,17 @@ $variable9 = $stmt9->fetch();
   <h3 id="title-cdss">Single Stage Example 3</h3>
   <p id="description">These examples are slighlty different from what you have just completed rather than 3 parts these three questions are single staged.
 <div id="cdss-container">
-    <form method="POST" action="UtlitarianPath4.php">
+    <form method="POST" action="UtilitarianPath4.php">
           <!--Single Stage-->
     <div id="example13">
-                <P class="survey-paragraph">4. A jack-knifed truck—should it hit the truck and kill its own driver, or should it swerve onto a crowded pavement and kill pedestrians? A human driver might react randomly (if they have time to react at all), but the response of an autonomous vehicle would have to be programmed ahead of time. What should we tell the car to do?</p>
+                <P class="survey-paragraph">3. A jack-knifed truck—should it hit the truck and kill its own driver, or should it swerve onto a crowded pavement and kill pedestrians? A human driver might react randomly (if they have time to react at all), but the response of an autonomous vehicle would have to be programmed ahead of time. What should we tell the car to do?</p>
                 <input type="radio" id="example3-stage1-utilitarian-ni" name="E3S1" value="U-E3S1-UTILITARIAN-ni" onclick="submitExamples3()" required></input>
                   <label class="example-option" for="example3-stage1-utilitarian-ni" onclick="submitExamples3()" > Continue present course crashing itself and killing the driver</label><br>
                 <input type="radio" id="example3-stage1-deontology-i" name="E3S1" value="U-E3S1-DEONTOLOGY-i" onclick="submitExamples3()">
                   <label class="example-option" for="example3-stage1-deontology-i" onclick="submitExamples3()"> Swerving off the road and kill the <?php echo $variable7["Dead"];?> pedestrians on the pavement </label><br>
-            <input type="hidden" name="variable7" value="<?php echo $variable7;?>"/>
-            <input type="hidden" name="variable8" value="<?php echo $variable8;?>"/>
-            <input type="hidden" name="variable9" value="<?php echo $variable9;?>"/>
+            <input type="hidden" name="variable7" value="<?php echo $variable7["Dead"];?>"/>
+            <input type="hidden" name="variable8" value="<?php echo $variable8["Dead"];?>"/>
+            <input type="hidden" name="variable9" value="<?php echo $variable9["Family"];?>"/>
             </div>
         <div>
             <button class="start-button" id="e3-submit" type="submit" style="display: none;">Next Page</button>
